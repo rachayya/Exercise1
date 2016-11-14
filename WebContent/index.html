@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Exercise 10</title>
+<link rel="stylesheet" type="text/css" href="css/Style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="images/img_avatar3.png">
+<link rel="stylesheet" type="text/css" href="css/Style.css">
+<link rel="icon" type="image/x-icon" href="images/favicon3.png" />
+<link href="Bootstrap/font-awesome-4.1.0/css/font-awesome.min.css"
+	rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<div class="well well-sm">
+				<form class="form-horizontal" name="contact"
+					action="/Testpitara/contactusbfl" method="post">
+					<fieldset>
+						<legend class="text-center">Contact Form</legend>
+						<div id="errorMsg" class="alert alert-error alert-dismissable"
+							style="display: none;">
+							<i class="fa fa-ban"></i>
+							<button class="close" type="button" data-dismiss="alert"
+								aria-hidden="true">×</button>
+							<div id="showmsg"></div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label" for="fname">Name</label>
+							<div class="col-md-9">
+								<input id="fname" class="form-control" name="fname"
+									placeholder="Your Name" maxlength="50" value="" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label" for="emailid">Email
+								Id</label>
+							<div class="col-md-9">
+								<input id="emailid" class="form-control" name="emailid"
+									placeholder="Email Id" maxlength="50" value="" type="text">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label" for="message">Comments</label>
+							<div class="col-md-9">
+								<textarea id="message" class="form-control" name="message"
+									maxlength="150" placeholder="Please enter your message here..."
+									rows="5" style="resize: none"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label" for="captcha">Review</label>
+							<div class="col-md-6">
+								<div class="checkbox">
+									<label><input type="checkbox"> Good</label> <label><input
+										type="checkbox"> Excellent</label> <label><input
+										type="checkbox"> Repeated</label> <label><input
+										type="checkbox"> Irrelevant</label>
+								</div>
+							</div>
+							<div class="col-md-3 text-right" style="padding: 20px">
+								<button class="btn btn-logout btn-success" type="button"
+									onclick="validate();">Submit</button>
+							</div>
+						</div>
+						<!-- <div class="form-group">
+							<label class="col-md-3 control-label" for="follow"
+								style="padding: 15px">Follow Us</label>
+							<div class="col-md-9"
+								style="float: right; padding: 7px; word-spacing: 20px">
+								<a
+									class="social-icon-sm si-dark si-grey-round si-colored-linkedin"
+									href="https://www.facebook.com/company/test-pitara"
+									target="_blank"> <span class="fa-stack fa-lg"> <i
+										class="fa fa-circle fa-stack-2x"></i> <i
+										class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+								</span>
+								</a> <a
+									class="social-icon-sm si-dark si-grey-round si-colored-linkedin"
+									href="https://plus.google.com/company/test-pitara"
+									target="_blank"> <span class="fa-stack fa-lg"> <i
+										class="fa fa-circle fa-stack-2x"></i> <i
+										class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+								</span>
+								</a> <a
+									class="social-icon-sm si-dark si-grey-round si-colored-linkedin"
+									href="https://www.twitter.com/company/test-pitara"
+									target="_blank"> <span class="fa-stack fa-lg"> <i
+										class="fa fa-circle fa-stack-2x"></i> <i
+										class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+								</span>
+								</a> <a
+									class="social-icon-sm si-dark si-grey-round si-colored-linkedin"
+									href="https://www.linkedin.com/company/test-pitara"
+									target="_blank"> <span class="fa-stack fa-lg"> <i
+										class="fa fa-circle fa-stack-2x"></i> <i
+										class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+								</span>
+								</a>
+							</div>
+						</div> -->
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
